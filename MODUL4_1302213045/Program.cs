@@ -1,13 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using MODUL4_1302213045;
 using System;
-
-public class KodeBuah
+class main
 {
-    public enum namabuah {Apel, Aprikot, Alpukat, Pisang, Paprika, Blackberry, Ceri, Kelapa, Jagung, Kurma, Durian, Anggur, Melon, Semangka};
-    public string get_kode_buah(namabuah buah)
+    static void Main(String[] args)
     {
-        string[] Kode = {"A00", "B00", "C00", "D00", "E00", "F00", "H00", "I00", "J00", "K00", "L00", "M00", "N00", "O00"};
-        return Kode[(int) buah];
+        KodeBuah buah= new KodeBuah();
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Apel));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Aprikot));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Alpukat));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Pisang));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Paprika));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Blackberry));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Ceri));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Kelapa));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Jagung));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Kurma));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Durian));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Anggur));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Melon));
+        Console.WriteLine(buah.get_kode_buah(KodeBuah.namabuah.Semangka));
+
+        PosisiKarakterGame gas = new PosisiKarakterGame();
+        gas.mulai();
     }
 }
